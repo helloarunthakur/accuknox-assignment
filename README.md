@@ -1,25 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Trainee Assignment – Dynamic Dashboard
 
-## How to run the website
+This project is a dynamic dashboard application built as part of the Frontend Trainee assessment.
 
-First, run the development server:
+## 📋 Assignment Requirements
+
+The application allows users to dynamically add, remove, and manage widgets within categorized sections.
+
+### Key Features
+
+- 📁 JSON-based structure for dashboard layout.
+- ➕ Add new widgets dynamically with a form (name, text).
+- ❌ Remove widgets from a category via a cross icon or uncheck via category section.
+- 🔍 Search functionality to filter all widgets.
+- 🧱 Uses local store management (Redux)
+- ⚙ Built with React NextJS.
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- **Framework**: NextJS
+- **State Management**: Redux Toolkit
+- **Styling**: CSS / Tailwind
+- **Language**: JavaScript
+
+---
+
+## 📥 Clone & Start Guide
+
+Follow these steps to run the project locally on your system.
+
+### 🔧 Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (v16 or later)
+- **npm** or **yarn**
+
+---
+
+### 🚀 Steps to Run the Project
+
+#### 1. Clone the Repository
 
 ```bash
-npm run dev
+git clone https://github.com/helloarunthakur/accuknox-assignment.git
+cd accuknox-dashboard-nextjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧪 Features Overview
 
-You can start editing the page by modifying `pages/index.js`.
+### 1. JSON-Driven UI
 
-## Tech Stack
+Widgets and categories are populated based on a JSON structure like:
 
-Tech Stack used to create this project:
-
-- NextJS
-- Redux
-- Tailwindcss
-- Vercel Deployment
-- custom components
-
-You can check out [Deployed Link of this Project](https://accu-knox.vercel.app/) - your feedback and contributions are welcome!
+```json
+{
+  "categories": [
+    {
+      "name": "CSPM Executive Dashboard",
+      "widgets": [
+        {
+          "name": "Widget 1",
+          "text": "Random Text Content"
+        }
+      ]
+    }
+  ]
+}
+```
