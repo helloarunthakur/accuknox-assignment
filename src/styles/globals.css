@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show {
+  right: 0% !important;
+  transition: right 0.4s;
+}
+.modal {
+  right: -100%;
+}
